@@ -8,5 +8,6 @@ algorithm
 #### sorting
 
 	quickSort
+	mergeSort
 
 
