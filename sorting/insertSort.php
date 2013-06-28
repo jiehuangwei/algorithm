@@ -2,11 +2,11 @@
 function insertSort($a)
 {
     foreach ($a as $key => $value) {
-        $i = $key -1;
+        $i = $key - 1;
         while ( $i >= 0 && $value < $a[$i] ) {
-            $tmp = $a[$i+1];
+            $tmp     = $a[$i+1];
             $a[$i+1] = $a[$i];
-            $a[$i] = $tmp;
+            $a[$i]   = $tmp;
             $i--;
         }
     }
