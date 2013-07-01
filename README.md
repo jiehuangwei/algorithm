@@ -1,4 +1,4 @@
-algorithm
+algorithm ( use php for sorting , searching ...)
 =========
 
 #### searching
@@ -8,5 +8,8 @@ algorithm
 #### sorting
 
 	quickSort
+	mergeSort
+	heapSort
+	
 
 
