@@ -9,9 +9,9 @@ algorithm ( use php for sorting , searching ... )
 
 	quick
 	merge
-        insert
-        heap
-        bubble
+	insert
+	heap
+	bubble
 	bucket
 	radix
 	selection
