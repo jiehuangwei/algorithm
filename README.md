@@ -7,9 +7,13 @@ algorithm ( use php for sorting , searching ...)
 
 #### sorting
 
-	quickSort
-	mergeSort
-	heapSort
-	
+	quick
+	merge
+	insert
+	heap
+	bubble
+	bucket
+	radix
+	selection
 
 
