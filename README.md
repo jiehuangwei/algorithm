@@ -1,4 +1,4 @@
-algorithm
+algorithm ( use php for sorting , searching ... )
 =========
 
 #### searching
@@ -7,7 +7,13 @@ algorithm
 
 #### sorting
 
-	quickSort
-	mergeSort
+	quick
+	merge
+        insert
+        heap
+        bubble
+	bucket
+	radix
+	selection
 
 
