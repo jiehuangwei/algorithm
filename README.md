@@ -1,4 +1,4 @@
-algorithm ( use php for sorting , searching ...)
+algorithm ( php for sorting, searching )
 =========
 
 #### searching
