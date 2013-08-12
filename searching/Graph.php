@@ -8,12 +8,12 @@ class Graph
     public function __construct()
     {
         $this->_g = array(
-            array(1, 0, 0, 0, 0, 0),
-            array(0, 1, 0, 0, 0, 0),
-            array(0, 0, 1, 0, 0, 0),
+            array(1, 0, 0, 1, 0, 0),
+            array(0, 1, 0, 0, 1, 0),
+            array(1, 0, 1, 0, 0, 0),
             array(0, 0, 0, 1, 0, 0),
-            array(0, 0, 0, 0, 1, 0),
-            array(0, 0, 0, 0, 0, 1),
+            array(0, 1, 0, 1, 1, 0),
+            array(0, 0, 1, 0, 0, 1),
         );
 
         $this->_len = count($this->_g);
@@ -40,8 +40,32 @@ class Graph
             }
         }
     }
+
+    public function breadthFirst($start)
+    {
+        $queue = [];
+        // initially enqueue only the starting vertex
+        array_push($queue, $start);
+        $this->_visited[$start] = 1;
+
+        echo $start, "\n";
+        while (count($queue)) {
+            $node = array_shift($queue);
+            foreach ($this->_g[$node] as $key => $value) {
+                if ( !$this->_visited[$key] && $value == 1 )
+                {
+                    $this->_visited[$key] = 1;
+                    array_push($queue, $key);
+                    echo $key, "->\t";
+                }
+            }
+            echo "\n";
+        }
+    }
 }
 
 $g = new Graph();
-// 2 0 1 3 4 5
-$g->depthFirst(1);
+
+// $g->depthFirst(1);
+
+// $g->breadthFirst(1);
