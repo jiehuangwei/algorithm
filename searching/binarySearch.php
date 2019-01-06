@@ -8,7 +8,7 @@ function binarySearch($arr, $value) {
 	$end   = count($arr) - 1;
 	$pos   = false;
 	while ($start <= $end) {
-		$mid = intval(($start + $end) / 2); // 中间位置
+		$mid = intval($start + ($end - $start) / 2); // 中间位置,防止溢出
 
 		if(! isset($arr[$mid])) return $pos;
 
